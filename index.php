@@ -18,12 +18,12 @@
                 </div>
                 <div class="col-12">
                     <ul class="list-unstyled">
-
+                        <li v-for="(todo, index) in todoList" :key="index">{{todo.marca}} - {{todo.modello}}</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <script src="./js/script.js" type="type/javascript"></script>
+    <script src="./js/script.js" type="text/javascript"></script>
 </body>
 </html>
