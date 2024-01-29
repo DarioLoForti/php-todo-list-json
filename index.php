@@ -35,8 +35,8 @@
                 </div>
                 <div class="col-12">
                     <div class="input-group">
-                        <input class="form-control form-control-sm" v-model="inputText" type="text" placeholder="Inserisci nuovo impegno" @keyup.enter="addList">
-                        <button class="btn btn-sm btn-primary" @click="addList">Aggiungi impegno</button>
+                        <input class="form-control form-control-sm" v-model="inputText" type="text" placeholder="Inserisci nuovo impegno" @keyup.enter="updateList">
+                        <button class="btn btn-sm btn-primary" @click="updateList">Aggiungi impegno</button>
                     </div>
             </div>
         </div>
