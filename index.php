@@ -19,8 +19,17 @@
                 </div>
                 <div class="col-12">
                     <ul class="list-unstyled">
-                        <li class="m-3" v-for="(todo, index) in todoList" :key="index" >
-                            {{todo.text}} - {{todo.done}}
+                        <li class="m-3" v-for="(todo, index) in todoList" :key="index" :class="todo.done ? 'text-decoration-line-through' : '' ">
+                            <div class="d-flex justify-content-between">   
+                                <span @click="toggleDone(index)">
+                                    {{todo.text}}
+                                </span>
+                                <div class="buttons">
+                                    <button class="btn btn-sm btn-square" :class="todo.done ? 'btn-dark' : 'btn-success'" @click="toggleDone(index)">
+                                        <i class="fas" :class="todo.done ? 'fa-times' : 'fa-check'"></i>
+                                    </button>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
