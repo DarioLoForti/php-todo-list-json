@@ -1,0 +1,30 @@
+[
+    {
+        "marca": "Audi",
+        "modello": "A3"
+    },
+    {
+        "marca": "BMW",
+        "modello": "Serie 1"
+    },
+    {
+        "marca": "Mercedes",
+        "modello": "GLC"
+    },
+    {
+        "marca": "Porche",
+        "modello": "Carrera"
+    },
+    {
+        "marca": "Lamborghini",
+        "modello": "Aventador"
+    },
+    {
+        "marca": "Ferrari",
+        "modello": "812 Superfast"
+    },
+    {
+        "marca": "Bugatti",
+        "modello": "Chiron"
+    }
+]
