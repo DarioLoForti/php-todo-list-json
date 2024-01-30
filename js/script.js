@@ -18,12 +18,12 @@ createApp({
                 done: false
             }
             
+            
             axios.post(this.apiUrl, data, {
-                headers: {'Content-type': 'multipart/from-data'}
+                headers: {'Content-type': 'multipart/form-data'}
             }).then((response) => {
-                this.inputText = "";
-                this.done = false;
-                this.todoList = response.data;
+                this.todoList.push({ text: this.inputText, done: false });
+                 this.inputText = "";
             })
         },
 
@@ -34,19 +34,9 @@ createApp({
             });
         },
 
-        addList(){
-            let obj = {
-                text: this.inputText,
-                done: false
-            }
-
-            this.todoList.push(obj);
-            this.inputText = "";
-            
-        },
-
         toggleDone(index){
             this.todoList[index].done = !this.todoList[index].done;
         },
+        
     },
 }).mount('#app')

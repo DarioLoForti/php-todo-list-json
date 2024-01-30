@@ -13,7 +13,7 @@ if(isset($_POST['item']) && isset($_POST['done'])){
     $all['item'] = $inputText;
     $all['done'] = $done;
 
-    $list[] = $all;
+    array_push($list, $all);
    
     
 
